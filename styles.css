@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+body {
+    font-family: 'Bungee', cursive;
+    background-color: #711DB0;
+}
+
+#seleccion-mokepon {
+    background: #711DB0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #279b27;
+    color: #000000;
+    width: 211px;
+    height: 71px;
+    font-size: 32px;
+}
+
+.subtitulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #DBC4F0;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+.tarjetas, .tarjetas-ataques {
+    display: flex;
+    /* gap sirve para crear un separacion entre las tarjetas*/
+    gap: 25px;
+}
+
+.tarjeta-de-mokepon {
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 180px;
+    background: #34dbdb;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 3px solid black;
+    font-size: 15px;
+}
+
+.tarjeta-de-mokepon img {
+    width: 90px;
+}
+
+#boton-mokepon {
+    width: 100px;
+    height: 100px;
+    background: #C21292;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 3px solid #711DB0;
+    border-radius: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bungee', cursive;
+
+}
+
+input {
+    display: none;
+}
+
+input:checked + label{
+  background-color: red;
+}
+
+#seleccion-ataque {
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+}
+
+.boton-de-ataque {
+    background-color: rgba(173, 26, 218, 0.888);
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-family: 'Bungee', cursive;
+}
+
+#mensajes {
+    width: 280px;
+    background: PINK;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boton-reiniciar {
+    border: none;
+    color:#030005
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 170px 170px;
+}
+
+.ataques-jugador, .ataques-enemigo {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+@media (max-width: 519px) {
+    .tarjetas, .tarjetas-ataques {
+        flex-direction: column;
+    }
+}
